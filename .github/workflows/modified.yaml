@@ -24,13 +24,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    # CINTENT >> INSERT_CINTENT
-    - uses: JavidDitty/setup-cintent@64faaac1333aabc2e0a00af6109b48ec4d8071bf
-
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
+
+    # CINTENT >> INSERT_CINTENT
+    - uses: JavidDitty/setup-cintent@79d20aaa5fcb487e57e09d40e7b3b62fd53417e8
 
     - name: Update pip
       run: python -m pip install --upgrade pip
@@ -75,13 +75,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    # CINTENT >> INSERT_CINTENT
-    - uses: JavidDitty/setup-cintent@64faaac1333aabc2e0a00af6109b48ec4d8071bf
-
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
+
+    # CINTENT >> INSERT_CINTENT
+    - uses: JavidDitty/setup-cintent@79d20aaa5fcb487e57e09d40e7b3b62fd53417e8
 
     - name: Update pip
       run: python -m pip install --upgrade pip
